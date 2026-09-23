@@ -1,0 +1,232 @@
+/* Base: resets, variables, typography - ElevenLabs editorial */
+
+/* Font imports - Inter for body/nav/captions, EB Garamond as Waldenburg substitute for display */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    /* Canvas & Surfaces */
+    --color-canvas: #f5f5f5;
+    --color-canvas-soft: #fafafa;
+    --color-canvas-deep: #0c0a09;
+    --color-surface-card: #ffffff;
+    --color-surface-strong: #f0efed;
+    --color-surface-dark: #0c0a09;
+    --color-surface-dark-elevated: #1c1917;
+
+    /* Ink & Text */
+    --color-primary: #292524;
+    --color-primary-active: #0c0a09;
+    --color-ink: #0c0a09;
+    --color-body: #4e4e4e;
+    --color-body-strong: #292524;
+    --color-muted: #777169;
+    --color-muted-soft: #a8a29e;
+    --color-on-primary: #ffffff;
+    --color-on-dark: #ffffff;
+    --color-on-dark-soft: #a8a29e;
+
+    /* Hairlines */
+    --color-hairline: #e7e5e4;
+    --color-hairline-soft: #f0efed;
+    --color-hairline-strong: #d6d3d1;
+
+    /* Gradient orbs - ElevenLabs signature pastels */
+    --color-gradient-mint: #a7e5d3;
+    --color-gradient-peach: #f4c5a8;
+    --color-gradient-lavender: #c8b8e0;
+    --color-gradient-sky: #a8c8e8;
+    --color-gradient-rose: #e8b8c4;
+
+    /* Semantic */
+    --color-semantic-success: #16a34a;
+    --color-semantic-error: #dc2626;
+    --color-semantic-warning: #d97706;
+
+    /* Spacing - old scale xxs 4 through section 96 */
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-base: 16px;
+    --spacing-md: 20px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+    --spacing-section: 96px;
+
+    /* Rounded - soft pill */
+    --rounded-xs: 4px;
+    --rounded-sm: 6px;
+    --rounded-md: 8px;
+    --rounded-lg: 12px;
+    --rounded-xl: 16px;
+    --rounded-xxl: 24px;
+    --rounded-pill: 9999px;
+    --rounded-full: 9999px;
+    --rounded-none: 0px;
+
+    /* Typography families */
+    --font-display: 'EB Garamond', 'Waldenburg', 'Times New Roman', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Shadows - soft drop */
+    --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.04);
+    --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    /* Layout */
+    --content-max-width: 1200px;
+    --nav-height: 64px;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.16px;
+    color: var(--color-body);
+    background-color: var(--color-canvas);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+/* Typography - Display Waldenburg Light 300 */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    color: var(--color-ink);
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    letter-spacing: -1.92px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -0.96px;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: -0.36px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+p {
+    color: var(--color-body);
+}
+
+/* Caption uppercase - 12px 600 0.96px */
+.caption-uppercase {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    color: var(--color-muted);
+}
+
+/* Body strong */
+.body-strong {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.16px;
+    color: var(--color-body-strong);
+}
+
+/* Focus visibility */
+:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+}
+
+/* Selection - mint orb */
+::selection {
+    background-color: var(--color-gradient-mint);
+    color: var(--color-ink);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-canvas);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-hairline-strong);
+    border-radius: var(--rounded-pill);
+}
+
+/* Utility - screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

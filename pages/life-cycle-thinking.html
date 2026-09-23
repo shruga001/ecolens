@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Life-Cycle Thinking - cradle-to-grave vs cradle-to-cradle, the five LCA stages, and a traced cotton t-shirt footprint.">
+        <title>Life-Cycle Thinking — EcoLens</title>
+        <link rel="icon" href="../assets/favicon.ico">
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/layout.css">
+        <link rel="stylesheet" href="../css/components.css">
+        <link rel="stylesheet" href="../css/theme.css">
+    </head>
+    <body>
+        <!-- Header: persistent navbar -->
+        <header class="site-header" role="banner">
+            <div class="container nav-inner">
+                <a href="../index.html" class="nav-brand" aria-label="EcoLens home">
+                    <span class="nav-brand-mark" aria-hidden="true">◉</span>
+                    EcoLens
+                </a>
+                <nav class="nav-links" aria-label="Primary">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="green-consumerism.html" class="nav-link">Green Consumerism</a>
+                    <a href="eco-labels.html" class="nav-link">Eco-Labels</a>
+                    <a href="life-cycle-thinking.html" class="nav-link">Life-Cycle</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="../index.html" class="btn btn-outline">Overview</a>
+                    <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+                        <span data-theme-icon>🌙</span>
+                    </button>
+                    <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+                <a href="../index.html">Home</a>
+                <a href="green-consumerism.html">Green Consumerism</a>
+                <a href="eco-labels.html">Eco-Labels</a>
+                <a href="life-cycle-thinking.html">Life-Cycle Thinking</a>
+                <button class="btn btn-outline" data-theme-toggle style="margin-top:8px; width:100%; justify-content:center;">
+                    <span data-theme-icon>🌙</span>
+                    <span data-theme-label style="margin-left:8px;">Dark mode</span>
+                </button>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <!-- Section: Page intro -->
+            <section class="page-intro">
+                <div class="container">
+                    <p class="caption-uppercase page-intro-label">Pillar 03 — Life-Cycle Thinking</p>
+                    <h1 class="page-intro-title">Every product has a before and an after. Trace both.</h1>
+                    <p class="page-intro-text">
+                        Life-cycle thinking means asking: where did the materials come from, what happens during use, and where does it go after we are done? Formalized as <strong style="color:var(--color-ink);">Life Cycle Assessment (LCA, ISO 14040/14044)</strong>, it is how credible eco-labels verify their claims.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section: What it is -->
+            <section class="section container">
+                <div class="split">
+                    <div class="reveal">
+                        <p class="caption-uppercase">Concept</p>
+                        <h2 style="font-size:36px; margin-top:8px; margin-bottom:16px;">Cradle-to-grave — and beyond to cradle-to-cradle</h2>
+                        <p style="font-size:17px; line-height:1.7; margin-bottom:12px;">
+                            <strong style="color:var(--color-ink);">Cradle-to-grave</strong> follows a product from raw extraction (“cradle”) through disposal (“grave”). It reveals burden-shifting — e.g., a “recyclable” pack that is never collected, or an energy-efficient device made with conflict minerals.
+                        </p>
+                        <p style="line-height:1.7; margin-bottom:12px;">
+                            <strong style="color:var(--color-ink);">Cradle-to-cradle</strong> (McDonough & Braungart, 2002) redesigns the grave: either <em>technical nutrients</em> circulate in closed industrial loops, or <em>biological nutrients</em> safely return to the biosphere. Waste equals food. The <a href="eco-labels.html" style="text-decoration:underline; color:var(--color-ink);">Cradle to Cradle Certified</a> label audits exactly that.
+                        </p>
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
+                            <div style="background:var(--color-surface-card); border:1px solid var(--color-hairline); border-radius:var(--rounded-lg); padding:14px;">
+                                <p style="font-size:13px; font-weight:600; color:var(--color-ink);">Linear (cradle-to-grave)</p>
+                                <p style="font-size:13px; color:var(--color-muted); margin-top:4px;">Take → Make → Use → Dispose</p>
+                                <p style="font-size:12px; color:var(--color-muted); margin-top:6px;">Goal: reduce harm within a one-way flow.</p>
+                            </div>
+                            <div style="background:var(--color-ink); border:1px solid var(--color-ink); border-radius:var(--rounded-lg); padding:14px;">
+                                <p style="font-size:13px; font-weight:600; color:var(--color-on-primary);">Circular (cradle-to-cradle)</p>
+                                <p style="font-size:13px; color:var(--color-on-dark-soft); margin-top:4px;">Borrow → Make → Use → Return → Remake</p>
+                                <p style="font-size:12px; color:var(--color-on-dark-soft); margin-top:6px;">Goal: eliminate the concept of waste.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Visual aid: linear vs circular diagram -->
+                    <div class="visual-aid reveal" style="position:relative;">
+                        <div class="orb orb-lavender" style="width:260px; height:260px; top:-30px; right:-30px; opacity:0.4;" aria-hidden="true"></div>
+                        <div style="position:relative; z-index:2;">
+                            <h3 style="font-family:var(--font-body); font-weight:600; font-size:16px; color:var(--color-ink); margin-bottom:12px;">Visual Aid — Linear vs. Circular Flow</h3>
+                            <svg viewBox="0 0 340 220" role="img" aria-labelledby="lcaTitle lcaDesc" style="width:100%; height:auto;">
+                                <title id="lcaTitle">Linear and circular product flows</title>
+                                <desc id="lcaDesc">Top row shows linear: extraction arrow to manufacture arrow to use arrow to landfill. Bottom row shows circular: same stages but landfill replaced by recovery arrow looping back to extraction.</desc>
+                                <!-- Linear -->
+                                <text x="10" y="18" font-size="11" font-weight="600" fill="#777169" font-family="Inter">LINEAR — cradle-to-grave</text>
+                                <g>
+                                    <rect x="10" y="30" width="60" height="36" rx="8" fill="#f0efed" stroke="#d6d3d1"/>
+                                    <text x="40" y="48" text-anchor="middle" font-size="10" fill="#0c0a09">⛏️ Extract</text>
+                                    <text x="40" y="58" text-anchor="middle" font-size="8" fill="#777169">mine, harvest</text>
+                                    <text x="78" y="52" font-size="14" fill="#a8a29e">→</text>
+                                    <rect x="90" y="30" width="60" height="36" rx="8" fill="#f0efed" stroke="#d6d3d1"/>
+                                    <text x="120" y="48" text-anchor="middle" font-size="10" fill="#0c0a09">🏭 Make</text>
+                                    <text x="120" y="58" text-anchor="middle" font-size="8" fill="#777169">manufacture</text>
+                                    <text x="158" y="52" font-size="14" fill="#a8a29e">→</text>
+                                    <rect x="170" y="30" width="60" height="36" rx="8" fill="#f0efed" stroke="#d6d3d1"/>
+                                    <text x="200" y="48" text-anchor="middle" font-size="10" fill="#0c0a09">🛒 Use</text>
+                                    <text x="200" y="58" text-anchor="middle" font-size="8" fill="#777169">consume, wash</text>
+                                    <text x="238" y="52" font-size="14" fill="#a8a29e">→</text>
+                                    <rect x="250" y="30" width="60" height="36" rx="8" fill="#ffffff" stroke="#e7e5e4"/>
+                                    <text x="280" y="48" text-anchor="middle" font-size="10" fill="#dc2626">🗑️ Landfill</text>
+                                    <text x="280" y="58" text-anchor="middle" font-size="8" fill="#dc2626">grave</text>
+                                </g>
+                                <!-- Circular -->
+                                <text x="10" y="102" font-size="11" font-weight="600" fill="#0c0a09" font-family="Inter">CIRCULAR — cradle-to-cradle</text>
+                                <g>
+                                    <rect x="10" y="114" width="60" height="36" rx="8" fill="#a7e5d3" fill-opacity="0.25" stroke="#a7e5d3"/>
+                                    <text x="40" y="132" text-anchor="middle" font-size="10" fill="#0c0a09">⛏️ Extract</text>
+                                    <text x="40" y="142" text-anchor="middle" font-size="8" fill="#4e4e4e">renewable</text>
+                                    <text x="78" y="136" font-size="14" fill="#292524">→</text>
+                                    <rect x="90" y="114" width="60" height="36" rx="8" fill="#a7e5d3" fill-opacity="0.25" stroke="#a7e5d3"/>
+                                    <text x="120" y="132" text-anchor="middle" font-size="10" fill="#0c0a09">🏭 Make</text>
+                                    <text x="120" y="142" text-anchor="middle" font-size="8" fill="#4e4e4e">design to disassemble</text>
+                                    <text x="158" y="136" font-size="14" fill="#292524">→</text>
+                                    <rect x="170" y="114" width="60" height="36" rx="8" fill="#a7e5d3" fill-opacity="0.25" stroke="#a7e5d3"/>
+                                    <text x="200" y="132" text-anchor="middle" font-size="10" fill="#0c0a09">🛒 Use</text>
+                                    <text x="200" y="142" text-anchor="middle" font-size="8" fill="#4e4e4e">repair, share</text>
+                                    <text x="238" y="136" font-size="14" fill="#292524">→</text>
+                                    <rect x="250" y="114" width="60" height="36" rx="8" fill="#c8b8e0" fill-opacity="0.3" stroke="#c8b8e0"/>
+                                    <text x="280" y="132" text-anchor="middle" font-size="10" fill="#0c0a09">♻️ Recovery</text>
+                                    <text x="280" y="142" text-anchor="middle" font-size="8" fill="#4e4e4e">nutrient</text>
+                                </g>
+                                <!-- Loop arrow -->
+                                <path d="M 280 150 C 280 188, 40 188, 40 150" fill="none" stroke="#0c0a09" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow2)"/>
+                                <text x="165" y="188" text-anchor="middle" font-size="9" fill="#0c0a09" font-weight="600">waste = food — technical / biological cycle</text>
+                                <defs><marker id="arrow2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0c0a09"/></marker></defs>
+                            </svg>
+                            <p style="margin-top:8px; font-size:12px; color:var(--color-muted);">Alt text: Two flows — linear ends in landfill; circular loops recovery back to extraction with label waste equals food.</p>
+                            <p style="margin-top:8px; font-size:12px; color:var(--color-muted);">Standards: LCA per ISO 14040/14044; circular principles per Ellen MacArthur Foundation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Interactive 5-stage diagram -->
+            <section class="section section-alt">
+                <div class="container">
+                    <div style="max-width:720px; margin:0 auto var(--spacing-lg); text-align:center;">
+                        <p class="caption-uppercase">Interactive Diagram</p>
+                        <h2 style="margin-top:8px;">The five LCA stages — click to explore</h2>
+                        <p style="color:var(--color-muted); margin-top:8px;">Each stage is a hotspot opportunity. Hover or tap a stage; details appear below. Pure SVG + JS — no library.</p>
+                    </div>
+
+                    <div class="lifecycle-diagram" role="list" aria-label="Life cycle stages">
+                        <button class="lifecycle-stage is-active" data-lifecycle-stage data-title="1 · Raw Material Extraction" data-desc="Extraction of fibers, minerals, timber, water and fossil fuels. Impacts: land use, biodiversity loss, water depletion, mining emissions." data-tip="Prefer recycled, FSC-certified or renewable feedstocks. For cotton, organic avoids synthetic pesticides but still needs irrigation — look for rain-fed or recycled cotton." role="listitem" aria-pressed="true">
+                            <div class="lifecycle-stage-icon" aria-hidden="true">⛏️</div>
+                            <h4>Raw Material</h4>
+                            <p>Extraction &amp; farming</p>
+                        </button>
+                        <div class="lifecycle-arrow" aria-hidden="true">→</div>
+                        <button class="lifecycle-stage" data-lifecycle-stage data-title="2 · Manufacturing &amp; Processing" data-desc="Spinning, dyeing, assembly, energy use and chemical inputs. Often the largest carbon and water hotspot for textiles and electronics." data-tip="Look for EU Ecolabel or Blue Angel textiles — they cap hazardous chemicals and require energy/water thresholds. For electronics, EPEAT rates manufacturing impact." role="listitem" aria-pressed="false">
+                            <div class="lifecycle-stage-icon" aria-hidden="true">🏭</div>
+                            <h4>Manufacturing</h4>
+                            <p>Make &amp; finish</p>
+                        </button>
+                        <div class="lifecycle-arrow" aria-hidden="true">→</div>
+                        <button class="lifecycle-stage" data-lifecycle-stage data-title="3 · Distribution &amp; Transport" data-desc="Packaging, warehousing, global shipping. Transport is often overestimated — for many products it is 5-10% of footprint, but packaging waste is significant." data-tip="Choose concentrated refills, bulk or plastic-free packaging. Prefer local or low-packaging options; check FSC on cardboard." role="listitem" aria-pressed="false">
+                            <div class="lifecycle-stage-icon" aria-hidden="true">🚚</div>
+                            <h4>Distribution</h4>
+                            <p>Pack &amp; move</p>
+                        </button>
+                        <div class="lifecycle-arrow" aria-hidden="true">→</div>
+                        <button class="lifecycle-stage" data-lifecycle-stage data-title="4 · Use Phase" data-desc="Energy, water, detergent, maintenance during consumer use. For apparel, washing/drying dominates; for electronics, electricity use dominates." data-tip="Wash cold, line-dry, repair. One extra year of use cuts a garment footprint ~20%. For appliances, ENERGY STAR use-phase savings are measured and verified." role="listitem" aria-pressed="false">
+                            <div class="lifecycle-stage-icon" aria-hidden="true">👕</div>
+                            <h4>Use</h4>
+                            <p>Consume &amp; care</p>
+                        </button>
+                        <div class="lifecycle-arrow" aria-hidden="true">→</div>
+                        <button class="lifecycle-stage" data-lifecycle-stage data-title="5 · End of Life" data-desc="Landfill, incineration, recycling, composting or take-back. Design determines this fate — if it cannot be disassembled, it cannot be circulated." data-tip="Prefer take-back (Patagonia, EPEAT), compostable biological nutrients, or Cradle to Cradle Certified technical cycles. Check local recycling before assuming recyclable." role="listitem" aria-pressed="false">
+                            <div class="lifecycle-stage-icon" aria-hidden="true">♻️</div>
+                            <h4>End of Life</h4>
+                            <p>Recover or dispose</p>
+                        </button>
+                    </div>
+
+                    <!-- Detail panel -->
+                    <div id="stage-detail" style="margin-top:16px; background:var(--color-surface-card); border:1px solid var(--color-hairline); border-radius:var(--rounded-xl); padding:20px; min-height:120px;">
+                        <h4 style="font-family:var(--font-body); font-weight:600; color:var(--color-ink); margin-bottom:8px;">1 · Raw Material Extraction</h4>
+                        <p style="font-size:15px; line-height:1.6; color:var(--color-body); margin-bottom:8px;">Extraction of fibers, minerals, timber, water and fossil fuels. Impacts: land use, biodiversity loss, water depletion, mining emissions.</p>
+                        <p style="font-size:14px; color:var(--color-muted); background:var(--color-canvas-soft); padding:10px 12px; border-radius:8px; border:1px solid var(--color-hairline);"><strong style="color:var(--color-ink);">Eco tip:</strong> Prefer recycled, FSC-certified or renewable feedstocks. For cotton, organic avoids synthetic pesticides but still needs irrigation — look for rain-fed or recycled cotton.</p>
+                    </div>
+                    <p style="text-align:center; font-size:12px; color:var(--color-muted); margin-top:8px;">All stages keyboard-navigable (Tab + Enter). Diagram alt text provided in SVG titles.</p>
+                </div>
+            </section>
+
+            <!-- Section: Traced example - cotton t-shirt -->
+            <section class="section container">
+                <div style="max-width:720px; margin:0 auto var(--spacing-xl); text-align:center;">
+                    <p class="caption-uppercase">Traced Product</p>
+                    <h2 style="margin-top:8px;">Footprint of a Cotton T-Shirt</h2>
+                    <p style="color:var(--color-muted); margin-top:8px; font-size:17px; line-height:1.6;">
+                        A standard 250 g cotton tee — estimates from peer-reviewed LCA studies (e.g., Chapagain et al., WRAP UK). Numbers vary by region; the hotspots do not.
+                    </p>
+                </div>
+
+                <div class="grid-2">
+                    <!-- Visual aid: footprint breakdown -->
+                    <div class="visual-aid reveal">
+                        <h3 style="font-family:var(--font-body); font-weight:600; font-size:16px; color:var(--color-ink); margin-bottom:16px;">Visual Aid — Where the footprint hides (per tee)</h3>
+                        <!-- Bars -->
+                        <div style="display:flex; flex-direction:column; gap:12px;">
+                            <div>
+                                <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
+                                    <span style="font-weight:600; color:var(--color-ink);">🌱 Raw cotton farming</span>
+                                    <span style="color:var(--color-muted);">~2,700 L water</span>
+                                </div>
+                                <div style="height:14px; background:var(--color-hairline); border-radius:var(--rounded-pill); overflow:hidden;">
+                                    <div style="width:68%; height:100%; background:var(--color-gradient-mint); border-radius:var(--rounded-pill);"></div>
+                                </div>
+                                <p style="font-size:12px; color:var(--color-muted); margin-top:4px;">Irrigation + pesticides. Organic reduces chemical load but not water.</p>
+                            </div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
+                                    <span style="font-weight:600; color:var(--color-ink);">🏭 Dyeing &amp; finishing</span>
+                                    <span style="color:var(--color-muted);">~50% of CO₂</span>
+                                </div>
+                                <div style="height:14px; background:var(--color-hairline); border-radius:var(--rounded-pill); overflow:hidden;">
+                                    <div style="width:50%; height:100%; background:var(--color-gradient-peach); border-radius:var(--rounded-pill);"></div>
+                                </div>
+                                <p style="font-size:12px; color:var(--color-muted); margin-top:4px;">Chemical-intensive; EU Ecolabel restricts hazardous dyes.</p>
+                            </div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
+                                    <span style="font-weight:600; color:var(--color-ink);">👕 Use phase (washing)</span>
+                                    <span style="color:var(--color-muted);">~15-20% of energy</span>
+                                </div>
+                                <div style="height:14px; background:var(--color-hairline); border-radius:var(--rounded-pill); overflow:hidden;">
+                                    <div style="width:30%; height:100%; background:var(--color-gradient-sky); border-radius:var(--rounded-pill);"></div>
+                                </div>
+                                <p style="font-size:12px; color:var(--color-muted); margin-top:4px;">Cold wash + line dry cuts this by ~2/3.</p>
+                            </div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
+                                    <span style="font-weight:600; color:var(--color-ink);">🚚 Transport</span>
+                                    <span style="color:var(--color-muted);">~5% of CO₂</span>
+                                </div>
+                                <div style="height:14px; background:var(--color-hairline); border-radius:var(--rounded-pill); overflow:hidden;">
+                                    <div style="width:12%; height:100%; background:var(--color-gradient-lavender); border-radius:var(--rounded-pill);"></div>
+                                </div>
+                                <p style="font-size:12px; color:var(--color-muted); margin-top:4px;">Often overestimated — production dominates.</p>
+                            </div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
+                                    <span style="font-weight:600; color:var(--color-ink);">🗑️ End of life</span>
+                                    <span style="color:var(--color-muted);">Landfill vs. reuse</span>
+                                </div>
+                                <div style="height:14px; background:var(--color-hairline); border-radius:var(--rounded-pill); overflow:hidden;">
+                                    <div style="width:22%; height:100%; background:var(--color-gradient-rose); border-radius:var(--rounded-pill);"></div>
+                                </div>
+                                <p style="font-size:12px; color:var(--color-muted); margin-top:4px;">Extending life by 9 months cuts carbon/water/waste 20-30% (WRAP).</p>
+                            </div>
+                        </div>
+                        <div style="margin-top:16px; padding:10px 12px; background:var(--color-canvas); border:1px solid var(--color-hairline); border-radius:var(--rounded-md); font-size:12px; color:var(--color-muted);">
+                            Estimate: ~7 kg CO₂e per tee (range 4–8 kg per WRAP / Bio Intelligence). Alt text: Five bars showing farming dominates water, dyeing dominates CO₂, transport is minor, and reuse sharply reduces end-of-life impact.
+                        </div>
+                    </div>
+
+                    <div class="reveal" style="display:flex; flex-direction:column; gap:12px;">
+                        <div style="background:var(--color-surface-card); border:1px solid var(--color-hairline); border-radius:var(--rounded-xl); padding:20px;">
+                            <h3 style="font-family:var(--font-body); font-size:16px; font-weight:600; color:var(--color-ink); margin-bottom:8px;">What the numbers mean for choices</h3>
+                            <ul style="font-size:14px; line-height:1.7; color:var(--color-body); list-style:disc; padding-left:18px;">
+                                <li><strong>Regenerative or recycled cotton</strong> addresses farming + manufacturing — the two biggest hotspots. GOTS (Global Organic Textile Standard) certifies both fiber and processing.</li>
+                                <li><strong>Dark dyes omitted, undyed or naturally dyed</strong> options lower chemical manufacturing impact — EU Ecolabel audits this via REACH compliance.</li>
+                                <li><strong>Wash cold, wash less, repair</strong> shrinks the use phase — the only stage fully in consumer control.</li>
+                                <li><strong>Second-hand or take-back</strong> (e.g., Patagonia Worn Wear, H&M Garment Collecting with caution) defers landfill and avoids new production.</li>
+                            </ul>
+                        </div>
+                        <div style="background:var(--color-ink); color:var(--color-on-primary); border-radius:var(--rounded-xl); padding:20px;">
+                            <h4 style="font-family:var(--font-body); font-size:14px; font-weight:600; color:var(--color-on-primary); margin-bottom:8px;">Design lens — beyond the consumer</h4>
+                            <p style="font-size:14px; line-height:1.6; color:var(--color-on-dark-soft);">
+                                LCA is also a design tool: Fairphone maps minerals to avoid cobalt hotspots; IKEA’s Product Environmental Footprint pilot scores sofas; Cradle to Cradle Certified requires material health inventories. The consumer reads the label; the designer runs the assessment.
+                            </p>
+                            <a href="eco-labels.html" class="btn" style="margin-top:12px; background:var(--color-on-primary); color:var(--color-ink);">Find the label that verifies →</a>
+                        </div>
+                        <div style="background:var(--color-canvas-soft); border:1px solid var(--color-hairline); border-radius:var(--rounded-lg); padding:14px;">
+                            <p style="font-size:13px; font-weight:600; color:var(--color-ink);">Second traced example — smartphone (brief)</p>
+                            <p style="font-size:13px; line-height:1.6; color:var(--color-body); margin-top:4px;">
+                                Mining (rare earths, cobalt) dominates social/ecological impact; assembly energy ~30% of CO₂; use-phase electricity (~3 years) another ~30%; e-waste recovery via EPEAT/WEEE take-back is critical — only ~17% of global e-waste is formally recycled (UN Global E-waste Monitor 2024).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Comparison table -->
+            <section class="section section-alt">
+                <div class="container">
+                    <div style="max-width:720px; margin:0 auto var(--spacing-lg); text-align:center;">
+                        <p class="caption-uppercase">Compare Approaches</p>
+                        <h2 style="margin-top:8px;">Design strategies through a lifecycle lens</h2>
+                    </div>
+                    <div class="visual-aid reveal" style="padding:0; overflow:hidden;">
+                        <div style="overflow-x:auto;">
+                            <table class="eco-table" aria-label="Life cycle strategies comparison">
+                                <thead>
+                                    <tr>
+                                        <th>Strategy</th>
+                                        <th>Principle</th>
+                                        <th>Example</th>
+                                        <th>LCA Stage Targeted</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Eco-efficiency</strong></td>
+                                        <td>Do more with less</td>
+                                        <td>Lightweighting packaging; ENERGY STAR electronics</td>
+                                        <td>Manufacturing, Use</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Eco-effectiveness</strong></td>
+                                        <td>Waste = food</td>
+                                        <td>Cradle to Cradle Certified carpet tiles</td>
+                                        <td>End of Life → Raw Material loop</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sufficiency</strong></td>
+                                        <td>Less consumption overall</td>
+                                        <td>Patagonia “Don’t Buy This Jacket” + repair</td>
+                                        <td>Use (extended life)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Circular economy</strong></td>
+                                        <td>Keep products in use</td>
+                                        <td>Fairphone modular phone; IKEA Buy Back</td>
+                                        <td>All stages, especially End of Life</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p style="padding:10px 20px; font-size:12px; color:var(--color-muted); background:var(--color-canvas-soft); border-top:1px solid var(--color-hairline);">Source categories: Ellen MacArthur Foundation, McDonough Braungart, WRAP. Alt text: Table comparing eco-efficiency, eco-effectiveness, sufficiency and circular economy by principle, example and LCA stage.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA band -->
+            <section class="cta-band">
+                <h2>From idea to action.</h2>
+                <p>Life-cycle thinking is not abstract — it is visible on every label, every pack and every repair choice.</p>
+                <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+                    <a href="green-consumerism.html" class="btn btn-primary btn-lg">Revisit Green Consumerism</a>
+                    <a href="../index.html" class="btn btn-outline btn-lg">Back to overview</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <a href="../index.html" class="nav-brand">◉ EcoLens</a>
+                        <p class="footer-brand-copy">An educational guide to green consumerism, eco-labels and life-cycle thinking — helping you shop with confidence.</p>
+                    </div>
+                    <div>
+                        <h4 class="footer-heading">Explore</h4>
+                        <div class="footer-links">
+                            <a href="../index.html">Home</a>
+                            <a href="green-consumerism.html">Green Consumerism</a>
+                            <a href="eco-labels.html">Eco-Labels Directory</a>
+                            <a href="life-cycle-thinking.html">Life-Cycle Thinking</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="footer-heading">Credible Labels</h4>
+                        <div class="footer-links">
+                            <a href="https://www.energystar.gov/" target="_blank" rel="noopener">ENERGY STAR</a>
+                            <a href="https://environment.ec.europa.eu/topics/circular-economy/eu-ecolabel-home_en" target="_blank" rel="noopener">EU Ecolabel</a>
+                            <a href="https://www.fairtrade.net/" target="_blank" rel="noopener">Fairtrade International</a>
+                            <a href="https://connect.fsc.org/" target="_blank" rel="noopener">FSC Connect</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="footer-heading">Standards</h4>
+                        <div class="footer-links">
+                            <a href="https://www.iso.org/standard/37456.html" target="_blank" rel="noopener">ISO 14024 &amp; 14040</a>
+                            <a href="https://ellenmacarthurfoundation.org/" target="_blank" rel="noopener">Ellen MacArthur Foundation</a>
+                            <a href="https://www.c2ccertified.org/" target="_blank" rel="noopener">Cradle to Cradle</a>
+                            <a href="https://www.isprambiente.gov.it/" target="_blank" rel="noopener">UNEP LCA Initiative</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="footer-heading">About</h4>
+                        <div class="footer-links">
+                            <a href="#">Sources &amp; References</a>
+                            <a href="#">Accessibility Statement</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© <span id="current-year">2026</span> EcoLens · LCA per ISO 14040/14044 · T-shirt data: Chapagain, Hoekstra, WRAP; E-waste: UN Global E-waste Monitor.</p>
+                    <p style="display:flex; gap:12px; align-items:center;">
+                        <span>Three pillars complete — return home ↩</span>
+                        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" style="width:36px; height:36px;">
+                            <span data-theme-icon>🌙</span>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/labels-data.js"></script>
+        <script src="../js/quiz.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
